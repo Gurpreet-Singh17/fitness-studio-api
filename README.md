@@ -12,7 +12,7 @@ This is a backend API built using **FastAPI** and **SQLAlchemy** that allows use
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/fitness-studio-api.git
+git clone https://github.com/Gurpreet-Singh17/fitness-studio-api
 cd fitness-studio-api
 
 
