@@ -1,0 +1,11 @@
+
+python -m venv fastapiEnv
+fastapiEnv\Scripts\activate
+pip install -r requirements.txt
+ uvicorn BookFlight.main:app
+ cd BookFlight
+sqlite3 bookflightapp.db
+pip install razorpay
+pip show razorpay
+pip freeze //to show all dependencies in that environment
+pip install pytest pytest-asyncio

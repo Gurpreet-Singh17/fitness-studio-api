@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# VS Code project settings
+.vscode/
+
+# Virtual environment
+fastapiEnv/
+
+# Pytest cache
+.pytest_cache/
+
+# Database files (if not needed in repo)
+*.db
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# Sample or test input/output files
+sample.txt
+testdb.db
+bookClassesapp.db
+
+# Ignore compiled Python files in tests
+Test/*.cpython-*.pyc
