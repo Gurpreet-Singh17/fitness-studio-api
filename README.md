@@ -9,50 +9,48 @@ This is a backend API built using **FastAPI** and **SQLAlchemy** that allows use
 
 ## ⚙️ Setup Instructions
 
-### 1. Clone the Repository
 
 ```bash
+
+1. Clone the Repository
 git clone https://github.com/Gurpreet-Singh17/fitness-studio-api
 cd fitness-studio-api
+
+Switch to the correct branch:
+git checkout master
 
 
 2. Create a Virtual Environment and Activate It
 python -m venv venv
-source venv/bin/activate      # Linux/Mac
-venv\Scripts\activate         # Windows
-
+# For Linux/Mac
+source venv/bin/activate
+# For Windows
+venv\Scripts\activate
 
 3. Install Dependencies
 pip install -r requirements.txt
 
-4. (Optional) Add Seed Data
-bash
-Copy
-Edit
-python seed.py
-This will populate the database with sample classes.
-
 🚀 Running the App Locally
-bash
-Copy
-Edit
 uvicorn BookClasses.main:app --reload
+
 Visit the API at:
 📍 http://127.0.0.1:8000
 
-Interactive Swagger UI is available at:
+Interactive Swagger UI:
 📘 http://127.0.0.1:8000/docs
 
+🌱 (Optional) Add Seed Data
+After the server runs once and the database is created, you can populate it with sample classes:
+python seed.py
+
+
 📮 Sample API Requests
+
 ✅ Health Check
-bash
-Copy
-Edit
 curl -X GET http://127.0.0.1:8000/healthy
+
+
 📘 Create a Class
-bash
-Copy
-Edit
 curl -X POST http://127.0.0.1:8000/classes/ \
 -H "Content-Type: application/json" \
 -d '{
@@ -61,14 +59,15 @@ curl -X POST http://127.0.0.1:8000/classes/ \
   "instructor": "Aarav",
   "availableSlots": 20
 }'
+
+
 📋 Get All Classes
-bash
-Copy
-Edit
 curl -X GET http://127.0.0.1:8000/classesall
+
 
 ⏳ Get Upcoming Classes
 curl -X GET http://127.0.0.1:8000/classes
+
 
 🧾 Book a Class
 curl -X POST http://127.0.0.1:8000/book \
@@ -79,14 +78,18 @@ curl -X POST http://127.0.0.1:8000/book \
   "client_email": "gur@gmail.com"
 }'
 
+
 📧 Get Bookings by Email
 curl -X GET "http://127.0.0.1:8000/bookings?email=gur@gmail.com"
+
+
 🧪 Running Tests
 pytest
 Make sure you're using the correct virtual environment and that pytest is installed.
 
+
 📂 Project Structure
-Python Backend Assignment/
+fitness-studio-api/
 ├── BookClasses/
 │   ├── main.py
 │   ├── models.py
@@ -98,8 +101,9 @@ Python Backend Assignment/
 ├── seed.py
 ├── requirements.txt
 ├── README.md
+├── LICENSE
+
 
 🧑‍💻 Author
 Gurpreet Singh
-LinkedIn | GitHub
-
+LinkedIn • GitHub
